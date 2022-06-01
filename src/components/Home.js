@@ -7,9 +7,9 @@ import Courses from './Courses/Courses';
 const Home = () => {
   return (
     <>
-      <div className="max-w-7xl mx-auto bg-white">
+      <div className="max-w-8xl mx-auto bg-white">
       <div className="flex pt-4">
-        <div className="flex align-center justify-center">
+        <div className="flex align-center justify-center sm: pl-5">
           <img className="w-104" src={logo} alt="" />
         </div>
         <div className="flex align-center justify-center">

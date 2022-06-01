@@ -58,14 +58,16 @@ const Courses = () => {
     <div className="bg-white">
       <div className="max-w-6xl sm:px-6">
         <div className="flex">
-        <h2 className="text-xl font-bold text-brand-2">Your Courses</h2>
-        <a href="/add-courses" className="ml-auto flex align-center justify-center bg-brand-1 add-btn text-center text-brand-10 font-normal text-tiny">+Add Course</a>
+        <h2 className="text-xl font-semibold text-brand-2 sm: pl-3">Your Courses</h2>
+        <div className="sm: pl-3 ml-auto pr-3 pt-2">
+        <a href="/add-courses" className="flex align-center justify-center bg-brand-1 add-btn text-center text-brand-10 font-normal text-tiny">+Add Course</a>
+        </div>
         </div>
           
-          <div className="mt-6 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-6">
+          <div className="mt-6 space-y-12 lg:space-y-0 lg:grid sm: p-3 lg:grid-cols-3 lg:gap-x-9">
             {courses.map((course) => (
               <div key={course.id} className="group relative w-400 bg-white">
-                <div className="w-400 rounded-lg overflow-hidden group-hover:opacity-75 pt-4">
+                <div className="w-400 rounded-lg overflow-hidden group-hover:opacity-75 py-5">
                   <img
                     src={course.imageSrc}
                     alt={course.imageAlt}
