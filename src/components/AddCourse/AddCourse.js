@@ -34,7 +34,7 @@ const AddCourse = () => {
             <MdOutlineArrowBackIos className="mt-2" />
             Back to courses
           </a>
-          <div className="py-2 ml-auto">
+          <div className="py-2 ml-auto pr-3">
             <button
               type="button"
               className="bg-white py-3 px-3 border border-brand-1 rounded-md shadow-sm text-sm leading-3 font-normal text-brand-1"
