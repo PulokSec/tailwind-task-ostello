@@ -25,19 +25,19 @@ const AddCourse = () => {
 
   return (
     <div className="bg-white">
-      <div className="max-w-8xl sm:px-6">
-        <div className="flex">
+      <div className="max-w-8xl sm:px-6 shadow-md">
+        <div className="flex pt-2">
           <a
             href="/"
             className="flex align-center justify-center text-tiny font-normal text-brand-2"
           >
             <MdOutlineArrowBackIos className="mt-2" />
-            Back to courses
+            <span className="flex align-center justify-center text-tiny font-normal text-brand-2">Back to courses</span>
           </a>
-          <div className="py-2 ml-auto pr-3">
+          <div className="py-2 ml-auto pr-3 flex">
             <button
               type="button"
-              className="bg-white py-3 px-3 border border-brand-1 rounded-md shadow-sm text-sm leading-3 font-normal text-brand-1"
+              className="bg-white flex align-center justify-center py-3 px-3 border border-brand-1 rounded-md shadow-sm text-sm leading-3 font-normal text-brand-1"
             >
               Save as a draft
             </button>
@@ -80,19 +80,19 @@ const AddCourse = () => {
               </p>
             </div>
           </div>
-          <div className="mt-5 md:mt-0 md:col-span-2 pl-5">
+          <div className="mt-5 md:mt-0 md:col-span-2 pl-5 bg-white">
             <form action="#" onSubmit={handleSubmit}>
-              <div className="shadow sm:rounded-md sm:overflow-hidden">
+              <div className="sm:rounded-md sm:overflow-hidden">
                 <div className="py-5 bg-white space-y-6 sm:p-6">
-                  <div className="grid grid-cols-1 gap-2">
-                    <p className=" text-lg font-medium text-brand-2">
+                <p className=" text-lg font-medium text-brand-2">
                       Basic Details
                     </p>
-                    <div className="mt-1 rounded-md pr-5">
+                  <div className="grid grid-cols-1 gap-2">
+                    <div className="pt-5 rounded-md pr-5">
                       <input
                         type="text"
                         name="name"
-                        className="flex-1 shadow-sm h-10 block w-full sm:text-sm border border-brand-9 rounded-md"
+                        className="flex-1 h-10 block w-full sm:text-sm border border-brand-9 rounded-md"
                         placeholder="Course Name*"
                         onBlur={handleBlur}
                       />
@@ -101,7 +101,7 @@ const AddCourse = () => {
                       <input
                         type="text"
                         name="mode"
-                        className="flex-1 shadow-sm h-10 block w-full sm:text-sm border border-brand-9 rounded-md"
+                        className="flex-1 h-10 block w-full sm:text-sm border border-brand-9 rounded-md"
                         placeholder="Mode of Course*"
                         onBlur={handleBlur}
                       />
@@ -110,7 +110,7 @@ const AddCourse = () => {
                       <input
                         type="text"
                         name="duration"
-                        className="flex-1 shadow-sm h-10 block w-full sm:text-sm border border-brand-9 rounded-md"
+                        className="flex-1 h-10 block w-full sm:text-sm border border-brand-9 rounded-md"
                         placeholder="Course Duration*"
                         onBlur={handleBlur}
                       />
@@ -119,7 +119,7 @@ const AddCourse = () => {
                       <textarea
                         name="description"
                         rows={4}
-                        className="shadow-sm mt-1 block w-full sm:text-sm border border-brand-9 rounded-md"
+                        className="mt-1 block w-full sm:text-sm border border-brand-9 rounded-md"
                         placeholder="Course Description*"
                         onBlur={handleBlur}
                       />
@@ -128,7 +128,7 @@ const AddCourse = () => {
                       <input
                         type="text"
                         name="duration"
-                        className="flex-1 shadow-sm h-10 block w-full sm:text-sm border border-brand-9 rounded-md"
+                        className="flex-1 h-10 block w-full sm:text-sm border border-brand-9 rounded-md"
                         placeholder="Course Duration*"
                       />
                     </div>
@@ -136,7 +136,7 @@ const AddCourse = () => {
                       <select
                         name="category"
                         autoComplete="category-name"
-                        className="mt-1 shadow-sm h-10 block w-full sm:text-sm border border-brand-9 rounded-md text-brand-2"
+                        className="mt-1 h-10 block w-full sm:text-sm border border-brand-9 rounded-md text-brand-2"
                         onBlur={handleBlur}
                       >
                         <option>Graphic Design</option>

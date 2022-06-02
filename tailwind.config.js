@@ -30,7 +30,7 @@ module.exports = {
 		colors: {
 			green: colors.green,
 			black: colors.black,
-			white: colors.white,
+			white: "#E5E5E5",
 			gray: colors.neutral,
 			bluegray: colors.slate,
 			indigo: colors.indigo,
